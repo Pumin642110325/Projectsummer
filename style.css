@@ -1,0 +1,43 @@
+.Clogo1{
+    color: rgb(52, 124, 231);
+}
+.Clogo1:hover{
+    color: rgb(145, 179, 230);
+}
+.text-bold{
+    font-weight: bolder;
+}
+.my_background{
+    background-color: rgb(42, 40, 40);
+}
+.rx1{
+    color: rgb(255, 255, 255);
+}
+.carousel-image{
+    height: 30em;
+    object-fit:cover;
+}
+.choose{
+
+}
+.bluemin{
+    background-color: rgb(52, 124, 231);
+}
+.overlay {
+    opacity: 1;
+}
+.overlay:hover {
+    opacity: 2;
+    border: 0.1em solid rgb(52, 124, 231);
+}
+.rx2{
+    color: rgb(255, 255, 255);
+}
+.rx2:hover{
+    color: rgb(52, 124, 231);
+}
+@media only screen and {max-width: 600px;} {
+    body{
+        background: orange;
+    }
+}
