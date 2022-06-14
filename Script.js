@@ -48,16 +48,29 @@ function concept_card(index,dataCard){
     name.classList.add('row')
     text.appendChild(name)
 
-    let namecard =document.createElement('p')
+    const namecard =document.createElement('p')
     namecard.classList.add('col-8')
     namecard.classList.add('text-sm')
     namecard.classList.add('md:text-base')
     namecard.classList.add('rx2')
+    namecard.innerHTML = dataCard.data[index].title
     name.appendChild(namecard)
 
-   
+    const namecaed2 = document.createElement('i')
+    namecaed2.classList.add('col-1')
+    namecaed2.classList.add('bi')
+    namecaed2.classList.add('bi-ticket-detailed-fill')
+    namecaed2.classList.add('rx2')
+    name.appendChild(namecaed2)
 
-   
+    const namecaed3 = document.createElement('i')
+    namecaed3.classList.add('col-1')
+    namecaed3.classList.add('bi')
+    namecaed3.classList.add('bi-heart-fill')
+    namecaed3.classList.add('rx2')
+    name.appendChild(namecaed3)
+
+
 
     display_all_card.appendChild(col)
 }
