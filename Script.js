@@ -67,7 +67,7 @@ function concept_card(index,dataCard){
     namecaed3.classList.add('col-1')
     namecaed3.classList.add('bi')
     namecaed3.classList.add('bi-heart-fill')
-    namecaed3.classList.add('rx2')
+    namecaed3.classList.add('love')
     name.appendChild(namecaed3)
 
 
