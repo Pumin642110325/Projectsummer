@@ -1,49 +1,63 @@
-console.log("Start anime Studio")
-console.log("search all movie")
+
 function onload(){
-    fetch('https://api.jikan.moe/v4/anime%27)
+    fetch('https://api.jikan.moe/v4/anime')
     .then((response) => {
         return response.json()
-    }).then(dataAnime => {
-        console.log(dataAnime)
-        console.log(dataAnime.data[1].title)
-        console.log(dataAnime.data[1].images.jpg.image_url)
-
-        animeList(dataAnime)
+    }).then(dataCard=> {
+        console.log(dataCard)
+        console.log(dataCard.data[1].title)
+        Listcard(dataCard)
     })
 }
-function animeList(dataAnime){
-    for( counter=0; counter<dataAnime.data.length;counter++ ){
-        animeTable(counter,dataAnime)
+function Listcard(dataCard){
+    for( index=0; index<dataCard.data.length;index++ ){
+        concept_card(index,dataCard)
     }
-
 }
-function animeTable(index,dataAnime){
-    console.log(dataAnime.data[index].title)
-    const display_all_anime = document.getElementById('display_all_anime')
+function concept_card(index,dataCard){
+    
+    console.log(dataCard.data[index].title)
+    const display_all_card= document.getElementById('display_all_card')
+
     let col = document.createElement('div')
     col.classList.add('col-lg-2')
     col.classList.add('col-md-4')
-    col.classList.add('col-sm-6')
     col.classList.add('col-12')
-    col.classList.add('my-lg-4')
-    col.classList.add('my-md-3')
-    col.classList.add('my-2')
-    let card = document.createElement('div')
-    card.classList.add('card')
-    card.classList.add('bg-dark')
-    card.classList.add('text-white')
-    card.classList.add('blur')
-    col.appendChild(card)
+    col.classList.add('mt-2')
+
+    let meat = document.createElement('div')
+    meat.classList.add('card')
+    meat.classList.add('bg-dark')
+    meat.classList.add('text-white')
+    meat.classList.add('blur')
+    meat.classList.add('overlay')
+    col.appendChild(meat)
+
     let image = document.createElement('img')
-    image.setAttribute('src',dataAnime.data[index].images.jpg.image_url)
+    image.setAttribute('src',dataCard.data[index].images.jpg.image_url)
     image.classList.add('card-img')
     image.classList.add('size-img-card')
-    card.appendChild(image)
-    let overlay = document.createElement('div')
-    overlay.classList.add('contain')
-    overlay.classList.add('overlay')
-    card.appendChild(overlay)
+    meat.appendChild(image)
 
-    display_all_anime.appendChild(col)
+    let text = document.createElement('div')
+    text.classList.add('text')
+    text.classList.add('p-3')
+    meat.appendChild(text)
+
+    let name =document.createElement('div')
+    name.classList.add('row')
+    text.appendChild(name)
+
+    let namecard =document.createElement('p')
+    namecard.classList.add('col-8')
+    namecard.classList.add('text-sm')
+    namecard.classList.add('md:text-base')
+    namecard.classList.add('rx2')
+    name.appendChild(namecard)
+
+   
+
+   
+
+    display_all_card.appendChild(col)
 }
