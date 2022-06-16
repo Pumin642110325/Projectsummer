@@ -17,9 +17,9 @@
 
     <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="index.html">
                 <div class="Clogo1 text-bold text-uppercase fs-4 ">
-                    <i class="">Huhi Theater</i>
+                    <i class="Huhi" href="index.html">Huhi Theater</i>
                 </div>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -33,13 +33,13 @@
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="favorite.html">Favorite</a>
+                        <a id="lovetoon"class="nav-link">Favorite</a>
                     </li>
                 </ul>
                 <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <input id="tamha2"class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                     <div class="btn Clogo1">
-                        <i class="bi bi-search"></i>
+                        <i id="tamha" class="bi bi-search"></i>
                     </div>
                 </form>
             </div>
@@ -57,19 +57,18 @@
         </div>
         <div class="carousel-inner carousel-image fs-5 ">
             <div class="carousel-item active">
-                <img src="https://www.gamelegends.it/wp-content/uploads/2022/06/Castlevania.jpg" class="d-block w-100"
+                <img src="https://www.gamelegends.it/wp-content/uploads/2022/06/Castlevania.jpg" class="d-block w-100 iamge_carousel"
                     alt="...">
             </div>
             <div class="carousel-item">
-                <img src="https://assets-prd.ignimgs.com/2022/06/10/untitled-2-1654883419794.jpg" class="d-block w-100"
+                <img src="https://assets-prd.ignimgs.com/2022/06/10/untitled-2-1654883419794.jpg" class="d-block w-100 iamge_carousel"
                     alt="...">
             </div>
             <div class="carousel-item">
                 <img src="https://cdn.gamingdose.com/wp-content/uploads/2022/06/castlevania-nocturne.jpg"
-                    class="d-block w-100" alt="...">
+                    class="d-block w-100 iamge_carousel" alt="...">
             </div>
         </div>
-        https://thegoldennews.ca/wp-content/uploads/2022/06/1654893583_763_Castlevania-Nocturne-Netflix-announces-a-new-animated-series-during-the.png
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -83,54 +82,49 @@
     </div>
 
     <!-- /start bar| -->
-    <div class="container-fluid">
-        <div class="text-bold text-uppercase fs-4 rx1 h5">All Movie</div>
+    <div class="container-fluid" id="all_card">
+        <div id="searchtoon"class="text-bold text-uppercase fs-4 rx1 h5 mt-4">All Anime</div>
         
         <div class="row" id="display_all_card"></div>
     </div>
+    <!-- display favorite -->
+    <div class="container-fluid" id="favorite_card">
+        <div class="text-bold text-uppercase fs-4 rx1 h5 mt-4">
+            <i class="bi bi-balloon-heart"></i>My favorite</div>
+            <div class="row" id="display_favorite_card"></div>
+        </div>
 <!-- row out -->
     </div>
-    <div class="card mb-3 bg-detail my_background">
+    <div class="card mb-3 bg-detail my_background" id="showDetail">
         <div class="row">
             <div class="col rx1"></div>
-            <div class="col-lg-10  col-md-10 col-12 rx1 mt-4 ">
-                <div class="card mb-3 ">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="https://cdn.majorcineplex.com/uploads/movie/3400/thumb_3400.jpg"
-                                class="img-fluid rounded-start" alt="...">
-                        </div>
-                        <div class="col-md-8 my_background">
-                            <div class="card-body">
-                                <h3 class="card-title">Mobile Suit Gundam: Cucuruz Doan’s Island </h3>
-                                <div class="d-inline-flex text-white  text-uppercase text-bold ">Status</div>
-                                <p class="card-text ">
-                                    <span class="badge bg-primary d-inline-flex ">Scifi </span>
-                                    <span class="badge bg-primary d-inline-flex ">Robot</span>
-                                    <span class="badge bg-primary d-inline-flex ">Action</span>
-                                </p>
-                                <div class="d-inline-flex text-white fs-5 text-uppercase text-bold ">Synopsis</div>
-                                <p class="card-text">
-                                <div class="d-inline-flex rx1">หลังจากอดทนในการต่อสู้เพื่อตั้งรับในจาบูโร
-                                    กองกำลังสหพันธ์โลกวางแผนที่จะเริ่มปฏิบัติการเพื่อยึดโอเดสซา
-                                    ซึ่งเป็นสำนักงานใหญ่ของกองกำลังโจมตีดินของซีออน
-                                    อามุโระและฐานทัพสีขาวมุ่งหน้าไปยังเบลฟัสต์เพื่อเติมเสบียงก่อนปฏิบัติภารกิจ
-                                    อย่างไรก็ตาม White Base ได้รับคำสั่งซื้อใหม่
-                                    เพื่อมุ่งหน้าไปยังเกาะที่ไม่มีคนอาศัยอยู่ซึ่งเรียกว่า "เกาะไม่หวนกลับ"
-                                    เพื่อกวาดล้างผู้พลัดถิ่น
-                                    อามุโระออกเดินทางไปบนเกาะเพื่อค้นหาทหารที่ถูกทิ้งไว้ข้างหลัง
-                                    แต่กลับพบว่ามีเด็กกลุ่มหนึ่งและซาคุที่ไม่ควรจะอยู่ที่นั่น เมื่อสูญเสีย Gundam
-                                    ในการต่อสู้ Amuro ได้พบกับชายที่เรียกตัวเองว่า Cucuruz Doan เปิดเผยความลับของเกาะ
-                                    Amuro สามารถค้นหา Gundam อีกครั้งและหลบหนีอย่างปลอดภัย……</div>
-                                </p>
-                                <div class="border coplex "></div>
-                            </div>
-                        </div>
+            <div class="col-lg-10  col-md-10 col-12 rx1 mt-4  "><div class="card mb-3 " >
+                <div class="row g-0">
+                  <div class="col-md-4">
+                    <img src="https://cdn.majorcineplex.com/uploads/movie/3400/thumb_3400.jpg" class="img-fluid rounded-start set_iamge" alt="..." id="image_Detail">
+                  </div>
+                  <div class="col-md-8 my_background">
+                    <div class="card-body">
+                       <div class="d-flex justify-content-end">
+                                <div class="d-flex"><a class="bi bi-x-lg rx2 " href="index.html" ></a>
+                                </div>
+                       </div>
+                        
+                      <h3 class="card-title" id="name_Detail ">Mobile Suit Gundam: Cucuruz Doan’s Island </h3>
+                      <div class="d-inline-flex text-white  text-uppercase text-bold ">Status</div>
+                      <p class="card-text ">
+                            <span class="badge bg-primary d-inline-flex" id="type_detail">MV</span>
+                           
+                      </p>
+                      <div class="d-inline-flex text-white fs-5 text-uppercase text-bold ">Synopsis</div>
+                      <p class="card-text"><div class="d-inline-flex rx1" id="synopsis_Detail">หลังจากอดทนในการต่อสู้เพื่อตั้งรับในจาบูโร กองกำลังสหพันธ์โลกวางแผนที่จะเริ่มปฏิบัติการเพื่อยึดโอเดสซา ซึ่งเป็นสำนักงานใหญ่ของกองกำลังโจมตีดินของซีออน อามุโระและฐานทัพสีขาวมุ่งหน้าไปยังเบลฟัสต์เพื่อเติมเสบียงก่อนปฏิบัติภารกิจ อย่างไรก็ตาม White Base ได้รับคำสั่งซื้อใหม่ เพื่อมุ่งหน้าไปยังเกาะที่ไม่มีคนอาศัยอยู่ซึ่งเรียกว่า "เกาะไม่หวนกลับ" เพื่อกวาดล้างผู้พลัดถิ่น อามุโระออกเดินทางไปบนเกาะเพื่อค้นหาทหารที่ถูกทิ้งไว้ข้างหลัง แต่กลับพบว่ามีเด็กกลุ่มหนึ่งและซาคุที่ไม่ควรจะอยู่ที่นั่น เมื่อสูญเสีย Gundam ในการต่อสู้ Amuro ได้พบกับชายที่เรียกตัวเองว่า Cucuruz Doan เปิดเผยความลับของเกาะ Amuro สามารถค้นหา Gundam อีกครั้งและหลบหนีอย่างปลอดภัย……</div></p>
                     </div>
+                  </div>
                 </div>
-            </div>
+              </div></div>
             <div class="col rx1"></div>
         </div>
+    </div>
     </div>
     </div>
     </div>
